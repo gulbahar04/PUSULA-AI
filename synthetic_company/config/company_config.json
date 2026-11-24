@@ -1,0 +1,1022 @@
+
+{
+  "company": {
+    "name": "PUSULA Holding",
+    "description": "Çok lokasyonlu, yüz yüze çalışan kurumsal şirket",
+    "industry": "Diversified Enterprise",
+    "country": "Türkiye",
+    "timezone": "Europe/Istanbul",
+    "work_model": "on_site",
+    "employee_count": 1050
+  },
+  "workforce": {
+    "total_employees": 1050,
+    "it_employee_count": 10
+  },
+  "locations": [
+    {
+      "site_id": "IST",
+      "name": "Istanbul Headquarters",
+      "city": "Istanbul",
+      "employee_count": 700,
+      "is_headquarters": true,
+      "has_local_it_contact": true
+    },
+    {
+      "site_id": "ANK",
+      "name": "Ankara Branch",
+      "city": "Ankara",
+      "employee_count": 200,
+      "is_headquarters": false,
+      "has_local_it_contact": true
+    },
+    {
+      "site_id": "IZM",
+      "name": "Izmir Branch",
+      "city": "Izmir",
+      "employee_count": 150,
+      "is_headquarters": false,
+      "has_local_it_contact": true
+    }
+  ],
+  "identity": {
+    "type": "on_premises_active_directory",
+    "domain": "ad.pusulaholding.local",
+    "forest_count": 1,
+    "domain_count": 1,
+    "domain_controller_count": 2,
+    "m365_integration": "independent_accounts",
+    "entra_id_sync": false
+  },
+
+"departments": [
+  {
+    "department_id": "IT",
+    "name": "Information Technology",
+    "employee_count": 10,
+    "employees_by_site": {
+      "IST": 10,
+      "ANK": 0,
+      "IZM": 0
+    },
+    "responsibilities": [
+      "IT Support",
+      "System Administration",
+      "Network Management",
+      "Cybersecurity",
+      "Application Support"
+    ]
+  },
+  {
+    "department_id": "FIN",
+    "name": "Finance",
+    "employee_count": 140,
+    "employees_by_site": {
+      "IST": 100,
+      "ANK": 25,
+      "IZM": 15
+    },
+    "responsibilities": [
+      "Accounting",
+      "Budget Management",
+      "Financial Reporting",
+      "Payments"
+    ]
+  },
+  {
+    "department_id": "HR",
+    "name": "Human Resources",
+    "employee_count": 60,
+    "employees_by_site": {
+      "IST": 45,
+      "ANK": 10,
+      "IZM": 5
+    },
+    "responsibilities": [
+      "Recruitment",
+      "Employee Management",
+      "Payroll Coordination",
+      "Employee Onboarding and Offboarding"
+    ]
+  },
+  {
+    "department_id": "SALES",
+    "name": "Sales",
+    "employee_count": 290,
+    "employees_by_site": {
+      "IST": 180,
+      "ANK": 65,
+      "IZM": 45
+    },
+    "responsibilities": [
+      "Customer Management",
+      "Sales Operations",
+      "CRM Management",
+      "Sales Reporting"
+    ]
+  },
+  {
+    "department_id": "OPS",
+    "name": "Operations",
+    "employee_count": 435,
+    "employees_by_site": {
+      "IST": 280,
+      "ANK": 85,
+      "IZM": 70
+    },
+    "responsibilities": [
+      "Business Operations",
+      "Logistics",
+      "Process Management",
+      "Operational Reporting"
+    ]
+  },
+  {
+    "department_id": "MGT",
+    "name": "Management and Corporate Services",
+    "employee_count": 115,
+    "employees_by_site": {
+      "IST": 85,
+      "ANK": 15,
+      "IZM": 15
+    },
+    "responsibilities": [
+      "Executive Management",
+      "Corporate Planning",
+      "Business Strategy",
+      "Administrative Services"
+    ]
+  }
+],
+  
+"it_organization": {
+  "team_size": 10,
+  "manager": {
+    "role_id": "IT-MGR",
+    "title": "IT Manager",
+    "count": 1
+  },
+  "teams": [
+    {
+      "team_id": "HELPDESK",
+      "name": "Help Desk",
+      "support_level": "L1",
+      "count": 3,
+      "responsibilities": [
+        "User support requests",
+        "Password reset",
+        "Account lockout support",
+        "Hardware troubleshooting",
+        "Ticket management"
+      ]
+    },
+    {
+      "team_id": "SYSTEM",
+      "name": "System Administration",
+      "support_level": "L2",
+      "count": 2,
+      "responsibilities": [
+        "Active Directory management",
+        "Domain Controller management",
+        "Windows Server administration",
+        "Group Policy management",
+        "Backup management"
+      ]
+    },
+    {
+      "team_id": "NETWORK",
+      "name": "Network Administration",
+      "support_level": "L2",
+      "count": 1,
+      "responsibilities": [
+        "VLAN management",
+        "IP address management",
+        "DNS and DHCP",
+        "Firewall management",
+        "Network troubleshooting"
+      ]
+    },
+    {
+      "team_id": "SECURITY",
+      "name": "Information Security",
+      "support_level": "L2",
+      "count": 1,
+      "responsibilities": [
+        "Security incident management",
+        "MFA monitoring",
+        "Endpoint security",
+        "Access review",
+        "Security log analysis"
+      ]
+    },
+    {
+      "team_id": "APPLICATION",
+      "name": "Application Support",
+      "support_level": "L2",
+      "count": 2,
+      "responsibilities": [
+        "ERP support",
+        "CRM support",
+        "HR application support",
+        "Application access management",
+        "Application troubleshooting"
+      ]
+    }
+  ]
+},
+"site_contacts": [
+  {
+    "site_id": "ANK",
+    "contact_role": "Local IT Coordinator",
+    "department_id": "OPS",
+    "is_it_employee": false,
+    "responsibilities": [
+      "Coordinate physical IT support",
+      "Report hardware problems",
+      "Coordinate device delivery",
+      "Communicate with central Help Desk"
+    ]
+  },
+  {
+    "site_id": "IZM",
+    "contact_role": "Local IT Coordinator",
+    "department_id": "OPS",
+    "is_it_employee": false,
+    "responsibilities": [
+      "Coordinate physical IT support",
+      "Report hardware problems",
+      "Coordinate device delivery",
+      "Communicate with central Help Desk"
+    ]
+  }
+],
+  
+"active_directory": {
+  "domain": "ad.pusulaholding.local",
+  "forest_name": "PUSULA-HOLDING",
+  "organizational_units": [
+    {
+      "ou_id": "OU-COMPANY",
+      "name": "Company",
+      "parent": "ad.pusulaholding.local",
+      "description": "Main company organizational structure"
+    },
+    {
+      "ou_id": "OU-USERS",
+      "name": "Users",
+      "parent": "OU=Company",
+      "description": "Employee accounts"
+    },
+    {
+      "ou_id": "OU-COMPUTERS",
+      "name": "Computers",
+      "parent": "OU=Company",
+      "description": "Company computer accounts"
+    },
+    {
+      "ou_id": "OU-GROUPS",
+      "name": "Groups",
+      "parent": "OU=Company",
+      "description": "Security and distribution groups"
+    },
+    {
+      "ou_id": "OU-SERVICE",
+      "name": "ServiceAccounts",
+      "parent": "OU=Company",
+      "description": "Non-human service accounts"
+    },
+    {
+      "ou_id": "OU-DOMAIN-CONTROLLERS",
+      "name": "Domain Controllers",
+      "parent": "DOMAIN_ROOT",
+      "description": "Domain controller computer accounts"
+    }
+  ],
+  "user_ou_structure": {
+    "parent": "OU=Users",
+    "site_based": true,
+    "sites": [
+      {
+        "site_id": "IST",
+        "departments": [
+          "FIN",
+          "HR",
+          "SALES",
+          "OPS",
+          "MGT",
+          "IT"
+        ]
+      },
+      {
+        "site_id": "ANK",
+        "departments": [
+          "FIN",
+          "HR",
+          "SALES",
+          "OPS",
+          "MGT"
+        ]
+      },
+      {
+        "site_id": "IZM",
+        "departments": [
+          "FIN",
+          "HR",
+          "SALES",
+          "OPS",
+          "MGT"
+        ]
+      }
+    ]
+  },
+  "computer_ou_structure": {
+    "parent": "OU=Computers",
+    "categories": [
+      "Workstations",
+      "Laptops",
+      "Servers"
+    ]
+  },
+  "group_ou_structure": {
+    "parent": "OU=Groups",
+    "categories": [
+      "Department_Groups",
+      "Application_Groups",
+      "FileAccess_Groups",
+      "Privileged_Groups"
+    ]
+  }
+},
+
+"security_groups": {
+  "group_strategy": "AGDLP",
+  "naming_convention": {
+    "global_group_prefix": "GG-",
+    "domain_local_group_prefix": "DL-"
+  },
+  "groups": [
+    {
+      "group_id": "GG-FINANCE-USERS",
+      "name": "GG-FINANCE-USERS",
+      "scope": "Global",
+      "category": "Department",
+      "department_id": "FIN"
+    },
+    {
+      "group_id": "GG-HR-USERS",
+      "name": "GG-HR-USERS",
+      "scope": "Global",
+      "category": "Department",
+      "department_id": "HR"
+    },
+    {
+      "group_id": "GG-SALES-USERS",
+      "name": "GG-SALES-USERS",
+      "scope": "Global",
+      "category": "Department",
+      "department_id": "SALES"
+    },
+    {
+      "group_id": "GG-OPS-USERS",
+      "name": "GG-OPS-USERS",
+      "scope": "Global",
+      "category": "Department",
+      "department_id": "OPS"
+    },
+    {
+      "group_id": "GG-MANAGEMENT-USERS",
+      "name": "GG-MANAGEMENT-USERS",
+      "scope": "Global",
+      "category": "Department",
+      "department_id": "MGT"
+    },
+    {
+      "group_id": "GG-IT-USERS",
+      "name": "GG-IT-USERS",
+      "scope": "Global",
+      "category": "Department",
+      "department_id": "IT"
+    },
+    {
+      "group_id": "GG-ERP-USERS",
+      "name": "GG-ERP-USERS",
+      "scope": "Global",
+      "category": "Application"
+    },
+    {
+      "group_id": "GG-CRM-USERS",
+      "name": "GG-CRM-USERS",
+      "scope": "Global",
+      "category": "Application"
+    },
+    {
+      "group_id": "GG-HR-APP-USERS",
+      "name": "GG-HR-APP-USERS",
+      "scope": "Global",
+      "category": "Application"
+    },
+    {
+      "group_id": "GG-IT-SUPPORT",
+      "name": "GG-IT-SUPPORT",
+      "scope": "Global",
+      "category": "IT_Role"
+    },
+    {
+      "group_id": "GG-SYSTEM-ADMINS",
+      "name": "GG-SYSTEM-ADMINS",
+      "scope": "Global",
+      "category": "IT_Role"
+    },
+    {
+      "group_id": "GG-NETWORK-ADMINS",
+      "name": "GG-NETWORK-ADMINS",
+      "scope": "Global",
+      "category": "IT_Role"
+    },
+    {
+      "group_id": "GG-SECURITY-ADMINS",
+      "name": "GG-SECURITY-ADMINS",
+      "scope": "Global",
+      "category": "IT_Role"
+    },
+    {
+      "group_id": "DL-FS-FINANCE-RW",
+      "name": "DL-FS-FINANCE-RW",
+      "scope": "DomainLocal",
+      "category": "FileAccess",
+      "resource": "FS01/Finance",
+      "permission": "ReadWrite"
+    },
+    {
+      "group_id": "DL-FS-HR-RW",
+      "name": "DL-FS-HR-RW",
+      "scope": "DomainLocal",
+      "category": "FileAccess",
+      "resource": "FS01/HR",
+      "permission": "ReadWrite"
+    },
+    {
+      "group_id": "DL-FS-SALES-RO",
+      "name": "DL-FS-SALES-RO",
+      "scope": "DomainLocal",
+      "category": "FileAccess",
+      "resource": "FS01/Sales",
+      "permission": "ReadOnly"
+    },
+    {
+      "group_id": "DL-SERVER-MGMT",
+      "name": "DL-SERVER-MGMT",
+      "scope": "DomainLocal",
+      "category": "ServerAccess",
+      "resource": "ServerManagement",
+      "permission": "Administrative"
+    }
+  ],
+  "group_nesting": [
+    {
+      "parent_group": "DL-FS-FINANCE-RW",
+      "member_group": "GG-FINANCE-USERS"
+    },
+    {
+      "parent_group": "DL-FS-HR-RW",
+      "member_group": "GG-HR-USERS"
+    },
+    {
+      "parent_group": "DL-FS-SALES-RO",
+      "member_group": "GG-SALES-USERS"
+    },
+    {
+      "parent_group": "DL-SERVER-MGMT",
+      "member_group": "GG-SYSTEM-ADMINS"
+    }
+  ],
+  "privileged_groups": [
+    {
+      "group_id": "GG-DOMAIN-ADMINS",
+      "name": "Domain Admins",
+      "scope": "Global",
+      "risk_level": "Critical",
+      "membership_policy": "Dedicated_admin_accounts_only"
+    }
+  ]
+},
+
+"device_inventory": {
+  "target_computer_count": 1100,
+  "computer_distribution": {
+    "laptops": 650,
+    "desktops": 400,
+    "it_workstations": 50
+  },
+  "hostname_convention": {
+    "format": "SITE-DEPARTMENT-TYPE-NUMBER",
+    "site_codes": ["IST", "ANK", "IZM"],
+    "device_types": {
+      "desktop": "PC",
+      "laptop": "LT",
+      "it_workstation": "WS"
+    }
+  },
+  "computer_attributes": [
+    "hostname",
+    "serial_number",
+    "manufacturer",
+    "model",
+    "operating_system",
+    "employee_id",
+    "department_id",
+    "site_id",
+    "ou_path",
+    "mac_address",
+    "ip_address",
+    "vlan_id",
+    "device_status",
+    "purchase_date",
+    "last_inventory_update"
+  ],
+  "device_status_values": [
+    "Active",
+    "Inactive",
+    "Maintenance",
+    "Retired"
+  ]
+},
+"server_inventory": {
+  "target_server_count": 40,
+  "server_distribution": [
+    {
+      "category": "Identity_Network",
+      "count": 6
+    },
+    {
+      "category": "File_Servers",
+      "count": 4
+    },
+    {
+      "category": "ERP_Database",
+      "count": 6
+    },
+    {
+      "category": "CRM",
+      "count": 4
+    },
+    {
+      "category": "HR",
+      "count": 3
+    },
+    {
+      "category": "Backup",
+      "count": 3
+    },
+    {
+      "category": "Monitoring",
+      "count": 3
+    },
+    {
+      "category": "Security",
+      "count": 4
+    },
+    {
+      "category": "Other_Infrastructure",
+      "count": 7
+    }
+  ],
+  "server_attributes": [
+    "hostname",
+    "ip_address",
+    "operating_system",
+    "server_role",
+    "site_id",
+    "owner_team",
+    "criticality",
+    "environment",
+    "ad_ou",
+    "dependencies",
+    "last_inventory_update"
+  ],
+  "criticality_levels": [
+    "Critical",
+    "High",
+    "Medium",
+    "Low"
+  ],
+  "environments": [
+    "Production",
+    "Development",
+    "Test"
+  ]
+},
+
+"network_infrastructure": {
+  "site_networks": [
+    {
+      "site_id": "IST",
+      "network_prefix": "10.20",
+      "vpn_pool": "10.20.250.0/24"
+    },
+    {
+      "site_id": "ANK",
+      "network_prefix": "10.30",
+      "vpn_pool": "10.30.250.0/24"
+    },
+    {
+      "site_id": "IZM",
+      "network_prefix": "10.40",
+      "vpn_pool": "10.40.250.0/24"
+    }
+  ],
+  "vlans_per_site": 10,
+  "total_vlan_count": 30,
+  "vlan_definitions": [
+    {
+      "vlan_id": 5,
+      "name": "IT_MANAGEMENT",
+      "subnet_octet": 5,
+      "cidr": 24
+    },
+    {
+      "vlan_id": 15,
+      "name": "FINANCE",
+      "subnet_octet": 14,
+      "cidr": 23
+    },
+    {
+      "vlan_id": 25,
+      "name": "HR",
+      "subnet_octet": 25,
+      "cidr": 24
+    },
+    {
+      "vlan_id": 35,
+      "name": "SALES",
+      "subnet_octet": 34,
+      "cidr": 23
+    },
+    {
+      "vlan_id": 45,
+      "name": "OPERATIONS",
+      "subnet_octet": 44,
+      "cidr": 23
+    },
+    {
+  "vlan_id": 55,
+  "name": "Management",
+  "subnet_octet": 54,
+  "cidr": 23
+    },
+    {
+      "vlan_id": 100,
+      "name": "SERVERS",
+      "subnet_octet": 100,
+      "cidr": 24
+    },
+    {
+      "vlan_id": 150,
+      "name": "NETWORK_MANAGEMENT",
+      "subnet_octet": 150,
+      "cidr": 24
+    },
+    {
+      "vlan_id": 160,
+      "name": "PRINTERS",
+      "subnet_octet": 160,
+      "cidr": 24
+    },
+    {
+      "vlan_id": 170,
+      "name": "IP_PHONES",
+      "subnet_octet": 170,
+      "cidr": 23
+    },
+    {
+      "vlan_id": 200,
+      "name": "GUEST_WIFI",
+      "subnet_octet": 200,
+      "cidr": 24
+    }
+  ],
+  "gateway_convention": "First usable IP address in each subnet",
+  "dhcp": {
+    "enabled": true,
+    "lease_duration_hours": 24,
+    "dynamic_range": {
+      "start_host": 50,
+      "end_host": 230
+    },
+    "static_reservations": true,
+    "lease_history_enabled": true
+  },
+  "dns": {
+    "enabled": true,
+    "active_directory_integrated": true,
+    "forward_lookup": true,
+    "reverse_lookup": true,
+    "dns_server_ids": [
+      "DNS01",
+      "DC01"
+    ]
+  },
+  "firewall": {
+    "centralized_management": true,
+    "default_policy": "DENY",
+    "rule_logging": true,
+    "traffic_logging": true,
+    "site_to_site_connectivity": true,
+    "inter_vlan_inspection": true
+  },
+  "wifi": {
+    "corporate_ssid": "PUSULA-CORP",
+    "guest_ssid": "PUSULA-GUEST",
+    "corporate_authentication": "Enterprise_Authentication",
+    "guest_isolation": true,
+    "guest_internet_only": true
+  },
+  "printers": {
+    "target_count": 60,
+    "centralized_management": true,
+    "attributes": [
+      "printer_id",
+      "hostname",
+      "ip_address",
+      "mac_address",
+      "model",
+      "site_id",
+      "vlan_id",
+      "location",
+      "status"
+    ]
+  },
+  "vpn": {
+    "enabled": true,
+    "authentication": "MFA",
+    "separate_ip_pools_per_site": true,
+    "connection_logging": true,
+    "attributes": [
+      "user_id",
+      "source_ip",
+      "assigned_vpn_ip",
+      "connection_time",
+      "disconnection_time",
+      "authentication_result",
+      "device_id"
+    ]
+  },
+  "ip_phones": {
+    "enabled": true,
+    "target_count": 350,
+    "dedicated_vlan": 170,
+    "attributes": [
+      "phone_id",
+      "extension_number",
+      "mac_address",
+      "ip_address",
+      "site_id",
+      "employee_id",
+      "status"
+    ]
+  }
+},
+
+"applications": {
+  "target_application_count": 5,
+  "application_list": [
+    {
+      "application_id": "M365",
+      "name": "Microsoft 365",
+      "category": "Productivity",
+      "hosting": "Cloud",
+      "integration": "Independent_Accounts",
+      "owner_team": "APPLICATION",
+      "criticality": "High",
+      "services": [
+        "Outlook",
+        "Teams",
+        "SharePoint",
+        "OneDrive",
+        "Office"
+      ],
+      "authentication": "MFA"
+    },
+    {
+      "application_id": "ERP",
+      "name": "Enterprise Resource Planning",
+      "category": "ERP",
+      "hosting": "On_Premises",
+      "application_server": "ERP01",
+      "database_server": "SQL01",
+      "owner_team": "APPLICATION",
+      "criticality": "Critical",
+      "access_group": "GG-ERP-USERS"
+    },
+    {
+      "application_id": "CRM",
+      "name": "Customer Relationship Management",
+      "category": "CRM",
+      "hosting": "On_Premises",
+      "application_server": "CRM01",
+      "database_server": "SQL02",
+      "owner_team": "APPLICATION",
+      "criticality": "High",
+      "access_group": "GG-CRM-USERS"
+    },
+    {
+      "application_id": "HR",
+      "name": "Human Resources and Payroll",
+      "category": "HR",
+      "hosting": "On_Premises",
+      "application_server": "HR01",
+      "database_server": "SQL03",
+      "owner_team": "APPLICATION",
+      "criticality": "Critical",
+      "access_group": "GG-HR-APP-USERS"
+    },
+    {
+      "application_id": "FILE",
+      "name": "Department File Services",
+      "category": "File_Server",
+      "hosting": "On_Premises",
+      "application_server": "FS01",
+      "owner_team": "SYSTEM",
+      "criticality": "High",
+      "access_group": "Department_Specific_Groups"
+    }
+  ],
+  "server_dependencies": [
+    {
+      "source": "ERP01",
+      "depends_on": "SQL01",
+      "dependency_type": "Database"
+    },
+    {
+      "source": "CRM01",
+      "depends_on": "SQL02",
+      "dependency_type": "Database"
+    },
+    {
+      "source": "HR01",
+      "depends_on": "SQL03",
+      "dependency_type": "Database"
+    },
+    {
+      "source": "ERP01",
+      "depends_on": "DC01",
+      "dependency_type": "Authentication"
+    },
+    {
+      "source": "CRM01",
+      "depends_on": "DC01",
+      "dependency_type": "Authentication"
+    },
+    {
+      "source": "HR01",
+      "depends_on": "DC01",
+      "dependency_type": "Authentication"
+    },
+    {
+      "source": "ERP01",
+      "depends_on": "DNS01",
+      "dependency_type": "Name_Resolution"
+    },
+    {
+      "source": "CRM01",
+      "depends_on": "DNS01",
+      "dependency_type": "Name_Resolution"
+    },
+    {
+      "source": "HR01",
+      "depends_on": "DNS01",
+      "dependency_type": "Name_Resolution"
+    }
+  ]
+},
+
+"security_policies": {
+  "mfa": {
+    "enabled": true,
+    "required_for": [
+      "VPN",
+      "Microsoft 365",
+      "Privileged_Accounts",
+      "Remote_Access"
+    ],
+    "m365_mfa_enforcement": true,
+    "active_directory_mfa": "VPN_and_privileged_access",
+    "methods": [
+      "Authenticator_App",
+      "FIDO2_Security_Key"
+    ]
+  },
+  "password_policy": {
+    "minimum_length": 14,
+    "complexity_required": true,
+    "password_history": 12,
+    "maximum_age_days": 90,
+    "account_lockout_threshold": 5,
+    "lockout_duration_minutes": 30,
+    "reset_counter_minutes": 30
+  }
+},
+
+"access_management": {
+  "principle": "Least_Privilege",
+  "access_assignment": "Role_Based_Access_Control",
+  "approval_required": true,
+  "approval_workflow": {
+    "request_created_by": "Employee_or_Manager",
+    "department_approval": "Department_Manager",
+    "it_approval": "IT_Manager",
+    "implementation_by": "Authorized_IT_Team"
+  },
+  "access_lifecycle": {
+    "new_employee": "Role_Based_Access",
+    "department_change": "Review_And_Update_Access",
+    "employee_termination": "Disable_Account_And_Revoke_Access",
+    "temporary_access": "Time_Limited"
+  },
+  "privileged_accounts": {
+    "separate_admin_accounts": true,
+    "shared_admin_accounts_allowed": false,
+    "domain_admin_access": "Restricted",
+    "privileged_access_approval": true,
+    "privileged_access_review_days": 30
+  },
+  "regular_access_review_days": 90,
+  "emergency_access": {
+    "enabled": true,
+    "approval_required": true,
+    "activity_logging": true,
+    "post_incident_review_required": true
+  }
+},
+
+"audit_and_logging": {
+  "logging_enabled": true,
+  "centralized_logging": true,
+  "retention_days": {
+    "active_directory": 365,
+    "windows_events": 180,
+    "firewall": 365,
+    "dhcp_dns": 90,
+    "m365_signins": 180,
+    "vpn": 180,
+    "mfa": 180
+  },
+  "monitored_events": {
+    "active_directory": [
+      "Successful_Logon",
+      "Failed_Logon",
+      "Account_Lockout",
+      "Account_Creation",
+      "Account_Disable",
+      "Group_Membership_Change",
+      "Privilege_Change",
+      "Password_Reset"
+    ],
+    "network": [
+      "Firewall_Deny",
+      "Firewall_Allow",
+      "DHCP_Lease_Assignment",
+      "Duplicate_IP",
+      "VPN_Connection",
+      "Network_Device_Status"
+    ],
+    "cloud": [
+      "M365_Successful_Signin",
+      "M365_Failed_Signin",
+      "MFA_Failure",
+      "Suspicious_Signin"
+    ],
+    "infrastructure": [
+      "Server_Status_Change",
+      "Disk_Space_Warning",
+      "Backup_Failure",
+      "Service_Failure",
+      "Security_Update_Status"
+    ]
+  },
+  "security_alerts": {
+    "repeated_failed_logins": 5,
+    "privileged_group_change": true,
+    "unauthorized_access_attempt": true,
+    "suspicious_signin": true,
+    "backup_failure": true,
+    "critical_server_unavailable": true
+  },
+  "audit": {
+    "access_changes_must_be_logged": true,
+    "admin_activities_must_be_logged": true,
+    "log_tampering_detection": true,
+    "periodic_review_days": 30
+  }
+}
+
+
+
+
+
+
+  
+
+
+
+}

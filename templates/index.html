@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ app_name }}</title>
+
+    <link rel="stylesheet" href="/static/css/style.css?v=2">
+</head>
+
+<body>
+
+<div class="app-shell" id="appShell">
+
+    <!-- SOL SIDEBAR -->
+    <aside class="sidebar left-sidebar" id="leftSidebar">
+
+        <div class="sidebar-top">
+
+            <div class="brand">
+                <span class="brand-icon">P</span>
+                <span>PUSULA<span class="brand-ai">.AI</span></span>
+            </div>
+
+            <button
+                class="icon-button"
+                id="leftToggle"
+                type="button"
+                title="Sol paneli gizle"
+            >
+                ←
+            </button>
+
+        </div>
+
+        <div class="sidebar-content">
+
+            <button class="new-chat-btn" id="newChat" type="button">
+                <span>＋</span>
+                Yeni sohbet
+            </button>
+
+            <div class="sidebar-section">
+                <span class="section-label">ÇALIŞMA ALANI</span>
+
+                <div class="sidebar-item active">
+                    <span>◈</span>
+                    IT Destek Asistanı
+                </div>
+
+                <div class="sidebar-item">
+                    <span>◷</span>
+                    Sohbet geçmişi
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <span class="section-label">YÖNETİM</span>
+
+                <button
+                    class="sidebar-item"
+                    id="openUpload"
+                    type="button"
+                >
+                    <span>＋</span>
+                    Doküman yükle
+                </button>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer">
+            <span class="status-dot"></span>
+            <span>Sistem aktif</span>
+        </div>
+
+    </aside>
+
+
+    <!-- SOL SÜRÜKLEME ALANI -->
+    <div
+        class="resize-handle"
+        id="leftResize"
+        title="Panel genişliğini ayarla"
+    ></div>
+
+
+    <!-- ANA SOHBET ALANI -->
+    <main class="main-content">
+
+         <button
+                    class="icon-button panel-open-btn"
+                    id="leftOpen"
+                    type="button"
+                    title="Sol paneli aç"
+                >
+                    →
+                </button>
+
+        <header class="topbar">
+
+            <div class="topbar-left">
+
+                <div class="page-title">
+                    <span class="status-dot"></span>
+                    <span>Kurumsal IT Destek</span>
+                </div>
+
+            </div>
+
+            <div class="topbar-right">
+
+                <span class="environment-label">
+                    AGENTIC RAG
+                </span>
+
+                <button
+                    class="icon-button"
+                    id="rightToggle"
+                    type="button"
+                    title="İşlem geçmişini gizle"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- MESAJ ALANI -->
+        <section class="chat-area" id="chat">
+
+            <div class="welcome-screen" id="welcomeScreen">
+
+                <div class="welcome-badge">
+                    PUSULA-AI
+                </div>
+
+                <h1>
+                    Size nasıl yardımcı
+                    <span>olabilirim?</span>
+                </h1>
+
+                <p>
+                    Şirketinizin IT destek süreçleri için
+                    sorularınızı buradan iletebilirsiniz.
+                </p>
+
+                <div class="suggestion-list">
+
+                    <button class="example" type="button">
+                        Şirket VPN ağına nasıl bağlanırım?
+                    </button>
+
+                    <button class="example" type="button">
+                        Parola sıfırlama politikamız nedir?
+                    </button>
+
+                    <button class="example" type="button">
+                        Microsoft Teams bağlantı sorunu
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MESAJ GİRİŞ ALANI -->
+        <footer class="composer-area">
+
+            <form id="chatForm" class="composer">
+
+                <textarea
+                    id="question"
+                    rows="1"
+                    placeholder="IT destek sorunuzu buraya yazın..."
+                    required
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="send-button"
+                    aria-label="Mesaj gönder"
+                >
+                    ↑
+                </button>
+
+            </form>
+
+            <p class="composer-note">
+                PUSULA-AI yanıtlarını şirket bilgi kaynaklarına dayandırır.
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- SAĞ SÜRÜKLEME ALANI -->
+    <div
+        class="resize-handle"
+        id="rightResize"
+        title="Panel genişliğini ayarla"
+    ></div>
+
+
+    <!-- SAĞ SIDEBAR -->
+    <aside class="sidebar right-sidebar" id="rightSidebar">
+
+        <div class="sidebar-top">
+
+            <div>
+                <span class="section-label">AGENT MONITOR</span>
+                <h2>İşlem geçmişi</h2>
+            </div>
+
+            <button
+                class="icon-button"
+                id="rightClose"
+                type="button"
+                title="Sağ paneli gizle"
+            >
+                →
+            </button>
+
+        </div>
+
+        <div class="trace-content">
+
+            <p class="trace-description">
+                Agent'ın karar ve işlem adımları burada görüntülenir.
+            </p>
+
+            <div id="trace" class="trace-list">
+                <div class="empty-state">
+                    Henüz bir istek yapılmadı.
+                </div>
+            </div>
+
+            <div class="source-card">
+
+                <span class="section-label">YANIT KAYNAĞI</span>
+
+                <strong id="sourceUsed">—</strong>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- DOKÜMAN YÜKLEME MODALI -->
+    <div class="modal hidden" id="uploadModal">
+
+        <div class="modal-card">
+
+            <div class="modal-header">
+
+                <div>
+                    <span class="section-label">YÖNETİCİ PANELİ</span>
+                    <h2>Doküman yükle</h2>
+                </div>
+
+                <button
+                    class="icon-button"
+                    id="closeUpload"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+            <p>
+                Şirket bilgi tabanına yeni bir doküman ekleyin.
+            </p>
+
+            <label for="adminKey">
+                Yönetici API anahtarı
+            </label>
+
+            <input
+                id="adminKey"
+                type="password"
+                placeholder="API anahtarınızı girin"
+            >
+
+            <label for="fileInput">
+                Doküman dosyası
+            </label>
+
+            <input
+                id="fileInput"
+                type="file"
+                accept=".pdf,.txt,.md,.docx"
+            >
+
+            <button
+                id="uploadBtn"
+                class="primary-button"
+                type="button"
+            >
+                Dokümanı indeksle
+            </button>
+
+            <div id="uploadStatus" class="upload-status"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.6/purify.min.js"></script>
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
+
+
